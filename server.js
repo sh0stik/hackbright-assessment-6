@@ -103,3 +103,4 @@ app.get("/api/player", (req, res) => {
 app.listen(8000, () => {
   rollbar.log(`Listening on 8000`);
 });
+app.use(express.static(`${__dirname}/public`))
